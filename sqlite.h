@@ -6,7 +6,7 @@ struct date
     int year;
 };
 
-class Employee
+class Info
 {
 private:
     int ID;
@@ -151,3 +151,13 @@ public:
     void setRoomName(char* roomName_ ){ this->roomName = roomName_;}
     char* getRoomName(){ return this->roomName;}
 };
+
+class Employee{
+    Info info;
+    Salary Salary;
+    enum position{
+        normal = 0,
+        lead,
+        manager
+    };
+}
